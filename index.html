@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Pinapple Project</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen"/>
+	<style type="text/css">
+		
+	#header{
+		margin-top: 2em;
+	}
+		
+	h1,h2{
+		margin: 0 0 0.7em 0;
+	}
+	
+	#show-me-my-crops-button{
+		width: 350px;	
+	}
+	
+	#map{
+		width: 540px;
+		height: 290px;
+	}
+
+	#input_PH {
+		width:100px;
+	}
+
+	#input_Water {
+		width:100px;
+	}
+	
+	#location h2{
+		text-align: center;
+	}
+
+	
+	
+	#results{
+		margin-top: 2em;
+		display: none;
+	}
+		
+	</style>
+</head>
+
+<body>
+	<!-- Contenedor Principal -->
+	<div class="container">
+		<div class="row" id="header">
+			<div class="span12">
+				<header>
+				<h1>Pinapple Project <small>Find your optimal crops according your location, climate and soil data.</small></h1>
+				</header>
+			</div>
+		</div>
+		
+		<!-- Mapa y Datos del Terreno -->
+		<div class="row">
+			<div class="span7" id="mapWrapper">
+				<div id="map"></div>
+			</div>
+			<div class="span5" id="location">
+				<h2>Your Location</h2>
+				<table class="table table-bordered table-striped" id="terrain-data">
+					<tbody>
+						<tr>
+							<td>Latitude</td>
+							<td id="lat"></td>
+						</tr>
+						<tr>
+							<td>Longitude</td>
+							<td id="long"></td>
+						</tr>
+						<tr>
+							<td>Elevation</td>
+							<td id="elv"></td>
+						</tr>
+						<tr>
+							<td>Soil PH</td>
+							<td><input type="text" value="" onfocus="this.value=''"
+								  id="input_PH"/><span>pH</span></td>
+						</tr>
+						<tr>
+							<td>Water (Annual Rainfall)</td>
+							<td><input type="text" value="" onfocus="this.value=''"
+
+							 id="input_Water" /><span>mm</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<a class="btn disabled btn-success btn-large" id="show-me-my-crops-button">Show Me My Crops</a><br/>
+					
+				</p>
+			</div>
+		</div>
+		<!-- / Mapa y Datos del Terreno -->
+		
+		
+		<div class="row">
+			<div class="span12" id="results">
+				<h2>Verduras o Frutas encontradas</h2>
+					<table class="table table-bordered table-striped" id="list">
+						<thead>
+							<tr>
+								<th>Commodity</th>
+								<th>Variety</th>
+								<th>Tº low</th>
+								<th>Tº High</th>
+								<th>Lat1</th>
+								<th>Lat2</th>
+								<th>Elevation Min</th>
+								<th>Elevation Max</th>
+								<th>Soil Type</th>
+								<th>Soil min PH</th>
+								<th>Soil max PH</th>
+								<th>Sunlight</th>
+								<th>Water min</th>
+								<th>Water max</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/pineaple/default.js"></script>
+  <script type="text/javascript" src="js/pineaple/draw.js"></script>
+  <script type="text/javascript" src="js/pineaple/controllers/map.js"></script>
+  <script type="text/javascript" src="js/pineaple/controllers/network.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+  <div id="loginbox" class="shadow block">
+		<h2>Login</h2>
+		<input type="text" value="username" id="user" name="user" onfocus="this.value=''" onblur="if(this.value=='') this.value='username'"/>
+		<input type="password" value="password" id="pass" name="pass" onfocus="if(this.value=='password') this.value=''" onblur="if(this.value=='') this.value='password'"/>
+		<button id="logBtn">Login</button>
+    <span>Invalid username and/or password</span>
+	</div>
+<script type="text/javascript">
+  var userInput = document.getElementById('user');
+  var passInput = document.getElementById('pass');
+  var logBtn = document.getElementById('logBtn');
+  var loginbox = document.getElementById('loginbox');
+  function login() {
+    var user = $(userInput).val();
+    var pass = $(passInput).val();
+    $.post('../uSell/',{mod:'User',act:{ userLogin : { user : user , pass: pass} } }, function(reply) { 
+      if (reply == 1) window.location.reload(true); else { 
+        $(loginbox).children('span').stop().slideDown('fast');
+       }
+    });
+  }
+	$(document).ready(function() {
+  		$(userInput).change(function() { 
+  			 if (/\s|(\?)/.test($(this).val())) $(this).val('');
+  		});
+  		$(passInput).keypress(function(event) {
+  			 if ( event.which == 13 )	login();
+  		});
+
+      $(logBtn).click(function() { 
+        login();
+      });
+
+  	});
+</script>
