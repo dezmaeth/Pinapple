@@ -9,7 +9,7 @@
   Location: Chile , (the end of world)
 
 /* THANKS */
-  Names (& URL): Matias Halles , Miguel Rojas , Hanna Back , Sebastian Yungue del pozo 
+  Names (& URL): Matias Halles , Miguel Rojas , Hanna Back , Sebastian Yunge Del Pozo 
 
 /* SITE */
   Standards: HTML5, CSS3 , PHP
