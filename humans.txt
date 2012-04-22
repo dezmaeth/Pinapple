@@ -3,18 +3,18 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Developer: Francisco Javier Henseleit Palma
+  Site: http://www.maethinthemiddle.com/
+  Twitter: dezmaeth
+  Location: Chile , (the end of world)
 
 /* THANKS */
-  Names (& URL):
+  Names (& URL): Matias Halles , Miguel Rojas , Hanna Back , Sebastian Yungue del pozo 
 
 /* SITE */
-  Standards: HTML5, CSS3
+  Standards: HTML5, CSS3 , PHP
   Components: Modernizr, jQuery
-  Software:
+  Software: Pinapple Project
 
 
 
