@@ -1,0 +1,105 @@
+/*!
+ * pinapple specific style
+ *
+ * Designed and built jose manuel del solar
+ */
+ 
+ header {
+	 width:940px;
+	 margin:auto;
+	 position:relative;
+	 margin-bottom:55px;
+	 margin-top:30px;
+	 height:115px;
+ }
+ #logo {
+	 width:285px;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 text-align:right;
+ }
+ #slogan {
+	 margin-left:285px;
+	 height:100%;
+ }
+ #slogan p{
+	 padding-top:96px;
+	 font-family:Verdana, Geneva, sans-serif;
+	 font-size:16px;
+	 color:#616161;
+ }
+  #slogan p b{
+	  color:#EE3F2C;
+	  font-weight:normal;
+ }
+.container {
+	width:940px;
+}
+
+#locator {
+	background-color: #ee3f2c;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	position:relative;
+	/*gradiente*/
+	background-image: -ms-linear-gradient(top, #ee3f2c, #b02e20);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee3f2c), to(#b02e20));
+	background-image: -webkit-linear-gradient(top, #ee3f2c, #b02e20);
+	background-image: -o-linear-gradient(top, #ee3f2c, #b02e20);
+	background-image: -moz-linear-gradient(top, #ee3f2c, #b02e20);
+	background-image: linear-gradient(top, #ee3f2c, #b02e20);
+	background-repeat: repeat-x;
+	margin-bottom:50px;
+}
+
+#locator-title {
+	position: absolute;
+	top: -15px;
+	left: -5px;
+	color: #EE3F2C;
+	display: block;
+	z-index: 100;
+	font-size: 20px;
+	font-weight: bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#locator-left {
+	width:48%;
+	float:left;
+	margin:8px;
+	position:relative;
+}
+#locator-right{
+	width:48%;
+	float:right;
+	margin:8px;
+}
+
+.table-folded {
+	color:#FFFFFF;
+}
+.table-folded tr{
+	border-bottom:#bb3729 solid 1px;
+}
+.floatbtn {
+	position:absolute;
+	bottom:-20px;
+	margin:auto;
+}
+
+#map{
+	width: 450px;
+	height: 290px;
+}
+
+.row {
+	margin-left: -100px;
+}
+
+#results{
+	margin-top: 2em;
+	display: none;
+}
