@@ -64,6 +64,4 @@ if (array_key_exists('g', $_POST) || array_key_exists('r', $_POST)) {
 	$serv = new Server();
 	$serv->query($_POST);
 }
-
-
 ?>

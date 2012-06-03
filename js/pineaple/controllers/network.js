@@ -6,11 +6,11 @@
 	    
 	    //getters
 	    this.getList = function(callback)  {
-	    	var pos = Pinapple.Map.yourpoint;
+	    	var pos = Pinapple.Map.yourposition;
 	    	var elv = Pinapple.Map.yourposition.elevation;
 	    	var ph = (Pinapple.Map.yourposition.ph !== undefined)? Pinapple.Map.yourposition.ph : null;
 	    	var water = (Pinapple.Map.yourposition.water !== undefined)? Pinapple.Map.yourposition.water : null ;
-	    	var position = { long: pos.$a, lat: pos.Za };
+	    	var position = { long: pos.longitude , lat: pos.latitude };
 	    	$.ajax({
 	    		url: _url,
 	    		type: 'POST',
